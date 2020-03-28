@@ -10,22 +10,7 @@
     <base-section>
       <info-box :content="infobox"></info-box>
     </base-section>
-    <ClientOnly>
-      <Slide>
-        <a id="home" href="/Gesundheit">
-          <span>Gesundheit</span>
-        </a>
-        <a id="home" href="/Tine">
-          <span>Tine</span>
-        </a>
-        <a id="home" href="/Nika">
-          <span>Nika</span>
-        </a>
-        <a id="home" href="/Wuerfe">
-          <span>Würfe</span>
-        </a>
-      </Slide>
-    </ClientOnly>
+    <Menu />
     <base-section>
       <text-area :content="paragraphs[0]"></text-area>
     </base-section>
@@ -51,21 +36,22 @@
 </template>
 
 <script>
-import home from "../data/home.json";
-import IntroArea from "../components/IntroArea.vue";
-import BaseSection from "../components/BaseSection.vue";
-import InfoBox from "../components/InfoBox.vue";
-import TextArea from "../components/TextArea.vue";
-import Footer from "../components/Footer.vue";
-import ParallaxImage from "../components/ParallaxImage.vue";
-import LogoShowCase from "../components/LogoShowCase.vue";
+import home from '../data/home.json';
+import IntroArea from '../components/IntroArea.vue';
+import BaseSection from '../components/BaseSection.vue';
+import InfoBox from '../components/InfoBox.vue';
+import TextArea from '../components/TextArea.vue';
+import Footer from '../components/Footer.vue';
+import ParallaxImage from '../components/ParallaxImage.vue';
+import LogoShowCase from '../components/LogoShowCase.vue';
+import Menu from '../components/Menu.vue';
 
 export default {
   data() {
-    return home;
+    return home
   },
   metaInfo: {
-    title: "Kooikerhondjes von der Wiesbachaue"
+    title: 'Kooikerhondjes von der Wiesbachaue',
   },
   components: {
     BaseSection,
@@ -75,12 +61,9 @@ export default {
     Footer,
     ParallaxImage,
     LogoShowCase,
-    Slide: () =>
-      import("vue-burger-menu")
-        .then(m => m.Slide)
-        .catch()
-  }
-};
+    Menu,
+  },
+}
 </script>
 
 <style>
