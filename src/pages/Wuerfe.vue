@@ -7,17 +7,16 @@
 </template>
 
 <script>
-
-import IntroArea from '../components/IntroArea.vue'
-import BaseSection from '../components/BaseSection.vue'
+import IntroArea from "../components/IntroArea.vue";
+import BaseSection from "../components/BaseSection.vue";
 
 export default {
   metaInfo: {
-    title: 'Würfe',
+    title: "Würfe"
   },
   components: {
     BaseSection,
-    IntroArea,
-  },
-}
+    IntroArea
+  }
+};
 </script>

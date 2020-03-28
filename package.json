@@ -7,17 +7,22 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@vue/eslint-config-airbnb": "^5.0.2",
     "gridsome": "^0.7.0",
     "vue-burger-menu": "^2.0.5",
     "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-gridsome": "^1.4.1",
     "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-vue": "^6.1.2",
+    "eslint-plugin-vue": "^6.2.2",
     "gridsome-plugin-tailwindcss": "^2.2.32",
     "node-sass": "^4.13.1",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-eslint-parser": "^7.0.0"
   }
 }

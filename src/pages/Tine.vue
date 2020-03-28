@@ -1,31 +1,34 @@
 <template>
   <Layout>
     <base-section>
-      <intro-area :image="image" :introText="introtext"></intro-area>
+      <intro-area :image="image" :intro-text="introtext" />
     </base-section>
+    <Menu />
     <base-section>
-      <text-area :content="paragraphs[0]"></text-area>
+      <text-area :content="paragraphs[0]" />
     </base-section>
   </Layout>
 </template>
 
 <script>
-import BaseSection from '../components/BaseSection.vue'
-import IntroArea from '../components/IntroArea.vue'
-import TextArea from '../components/TextArea.vue'
-import tine from '../data/tine.json'
+import Menu from "~/components/Menu";
+import BaseSection from "../components/BaseSection";
+import IntroArea from "../components/IntroArea";
+import TextArea from "../components/TextArea";
+import tine from "../data/tine.json";
 
 export default {
   metaInfo: {
-    title: 'Tine',
+    title: "Tine"
   },
   components: {
     BaseSection,
     IntroArea,
     TextArea,
+    Menu
   },
   data() {
-    return tine
-  },
-}
+    return tine;
+  }
+};
 </script>

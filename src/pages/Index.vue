@@ -36,23 +36,17 @@
 </template>
 
 <script>
-import home from '../data/home.json';
-import IntroArea from '../components/IntroArea.vue';
-import BaseSection from '../components/BaseSection.vue';
-import InfoBox from '../components/InfoBox.vue';
-import TextArea from '../components/TextArea.vue';
-import Footer from '../components/Footer.vue';
-import ParallaxImage from '../components/ParallaxImage.vue';
-import LogoShowCase from '../components/LogoShowCase.vue';
-import Menu from '../components/Menu.vue';
+import home from "../data/home.json";
+import IntroArea from "~/components/IntroArea";
+import BaseSection from "~/components/BaseSection";
+import InfoBox from "~/components/InfoBox";
+import TextArea from "~/components/TextArea";
+import Footer from "~/components/Footer";
+import ParallaxImage from "~/components/ParallaxImage";
+import LogoShowCase from "~/components/LogoShowCase";
+import Menu from "~/components/Menu";
 
 export default {
-  data() {
-    return home
-  },
-  metaInfo: {
-    title: 'Kooikerhondjes von der Wiesbachaue',
-  },
   components: {
     BaseSection,
     IntroArea,
@@ -61,9 +55,15 @@ export default {
     Footer,
     ParallaxImage,
     LogoShowCase,
-    Menu,
+    Menu
   },
-}
+  data() {
+    return home;
+  },
+  metaInfo: {
+    title: "Kooikerhondjes von der Wiesbachaue"
+  }
+};
 </script>
 
 <style>

@@ -18,9 +18,9 @@
 
 <script>
 export default {
-  name: 'IntroArea',
-  props: ['isHome', 'introText', 'image'],
-}
+  name: "IntroArea",
+  props: ["isHome", "introText", "image"]
+};
 </script>
 
 <style lang="scss">
