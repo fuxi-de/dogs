@@ -1,10 +1,10 @@
 <template>
   <ClientOnly>
     <Slide>
-      <g-link to="/Gesundheit/">Gesundheit</g-link>
-      <g-link to="/Tine/">Tine</g-link>
-      <g-link to="/Nika/">Nika</g-link>
-      <g-link to="/Wuerfe/">Wuerfe</g-link>
+      <g-link to="/gesundheit/">Gesundheit</g-link>
+      <g-link to="/tine/">Tine</g-link>
+      <g-link to="/nika/">Nika</g-link>
+      <g-link to="/wuerfe/">Wuerfe</g-link>
     </Slide>
   </ClientOnly>
 </template>
