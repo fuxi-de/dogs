@@ -20,3 +20,22 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+.bm-burger-button{
+  position:fixed !important;
+}
+.bm-burger-bars{
+  background-color:#f4d8cd !important;
+  outline:.5px solid #011627;
+}
+.bm-menu{
+  background:  #011627 !important;
+  a{
+    color: #f4d8cd;
+  }
+  .bm-cross{
+    background:  #f4d8cd !important;
+  }
+}
+</style>
+
