@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import IntroArea from "../components/IntroArea.vue";
-import BaseSection from "../components/BaseSection.vue";
+import IntroArea from "../components/IntroArea"
+import BaseSection from "../components/BaseSection"
 
 export default {
   metaInfo: {
@@ -18,5 +18,5 @@ export default {
     BaseSection,
     IntroArea
   }
-};
+}
 </script>

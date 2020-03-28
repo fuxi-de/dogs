@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Menu from "~/components/Menu";
-import BaseSection from "../components/BaseSection";
-import IntroArea from "../components/IntroArea";
-import TextArea from "../components/TextArea";
-import tine from "../data/tine.json";
+import Menu from "../components/Menu"
+import BaseSection from "../components/BaseSection"
+import IntroArea from "../components/IntroArea"
+import TextArea from "../components/TextArea"
+import tine from "../data/tine.json"
 
 export default {
   metaInfo: {
@@ -28,7 +28,7 @@ export default {
     Menu
   },
   data() {
-    return tine;
+    return tine
   }
-};
+}
 </script>

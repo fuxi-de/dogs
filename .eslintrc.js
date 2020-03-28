@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es6: true
   },
-  extends: ["plugin:vue/recommended", "airbnb-base", "prettier", "prettier/vue"],
+  extends: [
+    "plugin:vue/recommended",
+    "airbnb-base",
+    "prettier",
+    "prettier/vue"
+  ],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
@@ -15,7 +20,7 @@ module.exports = {
   plugins: ["vue"],
   rules: {
     "comma-dangle": ["error", "never"],
-    "semi": ["error", "never"],
+    semi: ["error", "never"],
     "import/extensions": [
       "error",
       "always",
@@ -23,14 +28,14 @@ module.exports = {
         js: "never",
         vue: "never"
       }
-    ]
+    ],
+    "import/no-unresolved": "off"
   },
   settings: {
     "import/resolver": {
       node: {
         extensions: [".js", ".jsx", ".vue"]
-      },
-      "webpack"
+      }
     }
   }
 };
