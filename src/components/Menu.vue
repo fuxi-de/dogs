@@ -1,18 +1,10 @@
 <template>
   <ClientOnly>
     <Slide>
-      <a id="home" href="/Gesundheit">
-        <span>Gesundheit</span>
-      </a>
-      <a id="home" href="/Tine">
-        <span>Tine</span>
-      </a>
-      <a id="home" href="/Nika">
-        <span>Nika</span>
-      </a>
-      <a id="home" href="/Wuerfe">
-        <span>Würfe</span>
-      </a>
+      <g-link to="/Gesundheit/">Gesundheit</g-link>
+      <g-link to="/Tine/">Tine</g-link>
+      <g-link to="/Nika/">Nika</g-link>
+      <g-link to="/Wuerfe/">Wuerfe</g-link>
     </Slide>
   </ClientOnly>
 </template>
