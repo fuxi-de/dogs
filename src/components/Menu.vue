@@ -5,7 +5,7 @@
       <g-link to="/gesundheit/">Gesundheit</g-link>
       <g-link to="/tine/">Tine</g-link>
       <g-link to="/nika/">Nika</g-link>
-      <g-link to="/wuerfe/">Wuerfe</g-link>
+      <g-link to="/wuerfe/">Würfe</g-link>
     </Slide>
   </ClientOnly>
 </template>

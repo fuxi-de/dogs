@@ -3,8 +3,8 @@
     <base-section>
       <intro-area
         :image="image"
-        :isHome="true"
-        :introText="introtext"
+        :is-home="true"
+        :intro-text="introtext"
       ></intro-area>
     </base-section>
     <base-section>
@@ -12,7 +12,7 @@
     </base-section>
     <Menu />
     <base-section>
-      <text-area :content="paragraphs[0]"></text-area>
+      <text-area :content="paragraphs[0]" />
     </base-section>
 
     <base-section>
@@ -20,7 +20,7 @@
     </base-section>
 
     <base-section>
-      <text-area :content="paragraphs[1]"></text-area>
+      <text-area :content="paragraphs[1]" />
     </base-section>
 
     <base-section>
@@ -36,15 +36,15 @@
 </template>
 
 <script>
-import home from "../data/home.json";
-import IntroArea from "~/components/IntroArea";
-import BaseSection from "~/components/BaseSection";
-import InfoBox from "~/components/InfoBox";
-import TextArea from "~/components/TextArea";
-import Footer from "~/components/Footer";
-import ParallaxImage from "~/components/ParallaxImage";
-import LogoShowCase from "~/components/LogoShowCase";
-import Menu from "~/components/Menu";
+import home from "../data/home.json"
+import IntroArea from "../components/IntroArea"
+import BaseSection from "../components/BaseSection"
+import InfoBox from "../components/InfoBox"
+import TextArea from "../components/TextArea"
+import Footer from "../components/Footer"
+import ParallaxImage from "../components/ParallaxImage"
+import LogoShowCase from "../components/LogoShowCase"
+import Menu from "../components/Menu"
 
 export default {
   components: {
@@ -58,12 +58,12 @@ export default {
     Menu
   },
   data() {
-    return home;
+    return home
   },
   metaInfo: {
     title: "Kooikerhondjes von der Wiesbachaue"
   }
-};
+}
 </script>
 
 <style>
