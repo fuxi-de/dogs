@@ -1,6 +1,7 @@
 <template>
   <ClientOnly>
     <Slide>
+      <g-link to="/">Startseite</g-link>
       <g-link to="/gesundheit/">Gesundheit</g-link>
       <g-link to="/tine/">Tine</g-link>
       <g-link to="/nika/">Nika</g-link>
