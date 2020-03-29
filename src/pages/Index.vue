@@ -70,4 +70,7 @@ export default {
 .home-links a {
   margin-right: 1rem;
 }
+.bg-light {
+  background-color: #f4d8cd;
+}
 </style>

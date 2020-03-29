@@ -24,9 +24,6 @@ export default {
 .infobox {
   border-color: #011627;
 }
-.bg-light {
-  background-color: #f4d8cd;
-}
 img{
   width:100%;
 }

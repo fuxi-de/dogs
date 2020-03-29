@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'LogoShowCase',
+  name: 'LogoShowCase'
 }
 </script>
 
