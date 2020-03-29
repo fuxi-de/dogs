@@ -7,6 +7,9 @@
     <base-section>
       <text-area :content="paragraphs[0]"></text-area>
     </base-section>
+    <base-section>
+      <image-slider/>
+    </base-section>
   </Layout>
 </template>
 
@@ -15,6 +18,7 @@ import Menu from "../components/Menu"
 import BaseSection from "../components/BaseSection"
 import IntroArea from "../components/IntroArea"
 import TextArea from "../components/TextArea"
+import ImageSlider from "../components/ImageSlider"
 import nika from "../data/nika.json"
 
 export default {
@@ -25,7 +29,8 @@ export default {
     BaseSection,
     IntroArea,
     TextArea,
-    Menu
+    Menu,
+    ImageSlider
   },
   data() {
     return nika

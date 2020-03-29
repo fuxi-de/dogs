@@ -5,6 +5,13 @@
     </base-section>
     <Menu />
     <base-section>
+      <div class="dark pt-8">
+        <g-image
+          alt="a kooikerhondje"
+          src="~/assets/images/awurf.jpg"
+          fit="cover"
+        />
+      </div>
       <text-area :content="paragraphs[0]"></text-area>
     </base-section>
   </Layout>
@@ -32,3 +39,11 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.dark {
+  background-color: #011627;
+  img{
+    margin:auto;
+  }
+}
+</style>

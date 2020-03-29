@@ -16,15 +16,18 @@
 <script>
 export default {
   name: 'Infobox',
-  props: ['content'],
+  props: ['content']
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .infobox {
   border-color: #011627;
 }
 .bg-light {
   background-color: #f4d8cd;
+}
+img{
+  width:100%;
 }
 </style>
