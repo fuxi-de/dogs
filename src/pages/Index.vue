@@ -11,6 +11,7 @@
       <info-box :content="infobox"></info-box>
     </base-section>
     <Menu />
+    <section-headline/>
     <base-section>
       <text-area :content="paragraphs[0]" />
     </base-section>
@@ -45,6 +46,7 @@ import Footer from "../components/Footer"
 import ParallaxImage from "../components/ParallaxImage"
 import LogoShowCase from "../components/LogoShowCase"
 import Menu from "../components/Menu"
+import SectionHeadline from "../components/SectionHeadline"
 
 export default {
   components: {
@@ -55,7 +57,8 @@ export default {
     Footer,
     ParallaxImage,
     LogoShowCase,
-    Menu
+    Menu,
+    SectionHeadline
   },
   data() {
     return home

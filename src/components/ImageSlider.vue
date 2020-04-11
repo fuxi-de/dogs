@@ -2,7 +2,12 @@
   <div class="flex items-center bg-light h-full">
     <div class="w-2/3 mx-auto">
       <ClientOnly>
-        <carousel :navigation-enabled="true" :per-page="1" :loop="true">
+        <carousel
+          ref="carousel"
+          :navigation-enabled="true"
+          :per-page="1"
+          :loop="true"
+        >
           <slide>
             <g-image
               class="mx-auto"
@@ -25,6 +30,7 @@
             />
           </slide>
         </carousel>
+        {{ currentSlide }}
       </ClientOnly>
     </div>
   </div>
@@ -36,13 +42,27 @@ export default {
   components: {
     Carousel: () =>
       import("vue-carousel")
-        .then(m => m.Carousel)
+        .then((m) => m.Carousel)
         .catch(),
     Slide: () =>
       import("vue-carousel")
-        .then(m => m.Slide)
-        .catch()
-  }
+        .then((m) => m.Slide)
+        .catch(),
+  },
+  mounted() {
+    this.$nextTick(() => {console.log(this.$refs["carousel"])})
+    this.currentSlide = this.$refs["carousel"].currentPage;
+  },
+  data: function () {
+    return {
+      currentSlide: 0,
+    };
+  },
+  watch: {
+    currentSlide: function (value, old) {
+      console.log(value);
+    },
+  },
 };
 </script>
 

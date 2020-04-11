@@ -8,7 +8,7 @@
       <text-area :content="paragraphs[0]"></text-area>
     </base-section>
     <base-section>
-      <image-slider/>
+      <image-slider />
     </base-section>
   </Layout>
 </template>
