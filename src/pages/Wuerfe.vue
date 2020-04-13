@@ -5,34 +5,7 @@
     </base-section>
     <Menu />
     <base-section>
-      <VueSlickCarousel
-        :arrows="true"
-        :dots="true"
-        @afterChange="handleAfterChange(slideIndex)"
-      >
-        <div>
-          <g-image
-            class="mx-auto"
-            src="~/assets/images/carousel/_MG_9256.jpg"
-            width="800"
-          />
-        </div>
-        <div>
-          <g-image
-            class="mx-auto"
-            src="~/assets/images/carousel/DSC_0458.jpg"
-            width="800"
-          />
-        </div>
-        <div>
-          <g-image
-            class="mx-auto"
-            src="~/assets/images/carousel/DSC_0463.jpg"
-            width="800"
-          />
-        </div>
-      </VueSlickCarousel>
-      <h1>{{slideIndex}}</h1>
+      <image-slider @propagateCurrentSlide="handleSlideChange" />
     </base-section>
     <small-section>
       <text-area :content="currentThrow" />
@@ -41,15 +14,13 @@
 </template>
 
 <script>
-import VueSlickCarousel from "vue-slick-carousel"
 import Menu from "../components/Menu"
 import BaseSection from "../components/BaseSection"
 import SmallSection from "../components/SmallSection"
 import IntroArea from "../components/IntroArea"
 import TextArea from "../components/TextArea"
+import ImageSlider from "../components/ImageSlider"
 import throws from "../data/throws.json"
-
-import "vue-slick-carousel/dist/vue-slick-carousel.css"
 
 export default {
   metaInfo: {
@@ -60,24 +31,25 @@ export default {
     SmallSection,
     IntroArea,
     TextArea,
-    VueSlickCarousel,
+    ImageSlider,
     Menu
   },
-  data () {
+  data() {
     return {
-      slideIndex: 0,
+      currentSlide: 0,
       data: throws
     }
   },
   computed: {
     currentThrow() {
-      return this.data.paragraphs[this.slideIndex]
+      return this.data.paragraphs[this.currentSlide]
     }
   },
   methods: {
-    handleAfterChange(slideIndex) {
-      const sliderLength = 2
-      this.slideIndex = slideIndex < sliderLength ? slideIndex + 1 : 0
+    // Triggered when `childToParent` event is emitted by the child.
+    handleSlideChange(value) {
+      console.log("val", value)
+      this.currentSlide = value
     }
   }
 }

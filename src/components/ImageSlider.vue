@@ -3,10 +3,10 @@
     <div class="w-2/3 mx-auto">
       <ClientOnly>
         <carousel
-          ref="carousel"
           :navigation-enabled="true"
           :per-page="1"
           :loop="true"
+          @page-change="handlePageChange"
         >
           <slide>
             <g-image
@@ -30,7 +30,6 @@
             />
           </slide>
         </carousel>
-        {{ currentSlide }}
       </ClientOnly>
     </div>
   </div>
@@ -49,20 +48,11 @@ export default {
         .then((m) => m.Slide)
         .catch(),
   },
-  mounted() {
-    this.$nextTick(() => {console.log(this.$refs["carousel"])})
-    this.currentSlide = this.$refs["carousel"].currentPage;
-  },
-  data: function () {
-    return {
-      currentSlide: 0,
-    };
-  },
-  watch: {
-    currentSlide: function (value, old) {
-      console.log(value);
-    },
-  },
+  methods: {
+    handlePageChange(currentPage) {
+      this.$emit('propagateCurrentSlide', currentPage)
+    }
+  }
 };
 </script>
 
