@@ -5,7 +5,7 @@
     </base-section>
     <Menu />
     <base-section>
-      <image-slider @propagateCurrentSlide="handleSlideChange" />
+      <image-slider :images="images" @propagateCurrentSlide="handleSlideChange" />
     </base-section>
     <small-section>
       <text-area :content="currentThrow" />
@@ -37,18 +37,17 @@ export default {
   data() {
     return {
       currentSlide: 0,
-      data: throws
+      data: throws,
+      images: throws.throws.map(({ image }) => image)
     }
   },
   computed: {
     currentThrow() {
-      return this.data.paragraphs[this.currentSlide]
+      return this.data.throws[this.currentSlide].text
     }
   },
   methods: {
-    // Triggered when `childToParent` event is emitted by the child.
     handleSlideChange(value) {
-      console.log("val", value)
       this.currentSlide = value
     }
   }

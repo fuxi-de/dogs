@@ -8,24 +8,10 @@
           :loop="true"
           @page-change="handlePageChange"
         >
-          <slide>
+          <slide v-for="(image, index) in images" :key="index"> 
             <g-image
               class="mx-auto"
-              src="~/assets/images/carousel/DSC_0463.jpg"
-              width="800"
-            />
-          </slide>
-          <slide>
-            <g-image
-              class="mx-auto"
-              src="~/assets/images/carousel/_MG_9256.jpg"
-              width="800"
-            />
-          </slide>
-          <slide>
-            <g-image
-              class="mx-auto"
-              src="~/assets/images/carousel/DSC_0458.jpg"
+              :src="image"
               width="800"
             />
           </slide>
@@ -38,6 +24,9 @@
 <script>
 export default {
   name: "ImageSlider",
+  props:{
+    'images': Array
+  },
   components: {
     Carousel: () =>
       import("vue-carousel")
