@@ -3,7 +3,6 @@
     <base-section>
       <intro-area :image="image" :intro-text="introtext" />
     </base-section>
-    <Menu />
     <base-section>
       <text-area :content="paragraphs[0]" />
     </base-section>
@@ -11,7 +10,6 @@
 </template>
 
 <script>
-import Menu from "../components/Menu"
 import BaseSection from "../components/BaseSection"
 import IntroArea from "../components/IntroArea"
 import TextArea from "../components/TextArea"
@@ -24,8 +22,7 @@ export default {
   components: {
     BaseSection,
     IntroArea,
-    TextArea,
-    Menu
+    TextArea
   },
   data() {
     return barf

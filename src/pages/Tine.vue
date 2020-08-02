@@ -3,7 +3,6 @@
     <base-section>
       <intro-area :image="image" :intro-text="introtext" />
     </base-section>
-    <Menu />
     <small-section>
       <text-area :content="paragraphs[0]" />
     </small-section>
@@ -14,7 +13,6 @@
 </template>
 
 <script>
-import Menu from "../components/Menu"
 import BaseSection from "../components/BaseSection"
 import SmallSection from "../components/SmallSection"
 import IntroArea from "../components/IntroArea"
@@ -30,7 +28,6 @@ export default {
     BaseSection,
     IntroArea,
     TextArea,
-    Menu,
     ImageSlider,
     SmallSection
   },

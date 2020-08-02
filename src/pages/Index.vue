@@ -10,7 +10,7 @@
     <base-section>
       <info-box :content="infobox"></info-box>
     </base-section>
-    <Menu />
+    
     <small-section :pt="false">
       <text-area headline="Unsere Zuchtstätte" :content="paragraphs[0]" />
     </small-section>
@@ -60,7 +60,6 @@ import InfoBox from "../components/InfoBox"
 import TextArea from "../components/TextArea"
 import ParallaxImage from "../components/ParallaxImage"
 import LogoShowCase from "../components/LogoShowCase"
-import Menu from "../components/Menu"
 import SmallSection from "../components/SmallSection"
 import List from "../components/List"
 
@@ -72,7 +71,6 @@ export default {
     TextArea,
     ParallaxImage,
     LogoShowCase,
-    Menu,
     SmallSection,
     List
   },

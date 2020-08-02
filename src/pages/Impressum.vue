@@ -8,22 +8,19 @@
         :content="paragraph.content"
       />
     </div>
-    <Menu />
   </Layout>
 </template>
 
 <script>
 import TextArea from "../components/TextArea"
 import impressum from "../data/impressum.json"
-import Menu from "../components/Menu"
 
 export default {
   metaInfo: {
     title: "Impressum"
   },
   components: {
-    TextArea,
-    Menu
+    TextArea
   },
   data() {
     return {
