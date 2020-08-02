@@ -4,11 +4,11 @@
       <intro-area :image="image" :intro-text="introtext" />
     </base-section>
     <Menu />
-    <base-section>
+    <small-section>
       <text-area :content="paragraphs[0]" />
-    </base-section>
+    </small-section>
     <base-section>
-      <image-slider/>
+      <image-slider :images="images"/>
     </base-section>
   </Layout>
 </template>
@@ -16,6 +16,7 @@
 <script>
 import Menu from "../components/Menu"
 import BaseSection from "../components/BaseSection"
+import SmallSection from "../components/SmallSection"
 import IntroArea from "../components/IntroArea"
 import TextArea from "../components/TextArea"
 import ImageSlider from "../components/ImageSlider"
@@ -30,7 +31,8 @@ export default {
     IntroArea,
     TextArea,
     Menu,
-    ImageSlider
+    ImageSlider,
+    SmallSection
   },
   data() {
     return tine

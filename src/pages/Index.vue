@@ -11,28 +11,26 @@
       <info-box :content="infobox"></info-box>
     </base-section>
     <Menu />
-    <section-headline/>
-    <base-section>
-      <text-area :content="paragraphs[0]" />
-    </base-section>
+    <small-section>
+      <text-area headline="Unsere Zuchtstätte" :content="paragraphs[0]" />
+    </small-section>
 
     <base-section>
       <parallax-image :image="'tine'"></parallax-image>
     </base-section>
 
     <base-section>
-      <text-area :content="paragraphs[1]" />
+      <text-area headline="Ein Kooikerhondje!" :content="paragraphs[1]" />
     </base-section>
 
-    <base-section>
+    <small-section>
       <logo-show-case></logo-show-case>
-    </base-section>
+    </small-section>
 
     <base-section>
       <parallax-image :image="'tineRunning'"></parallax-image>
     </base-section>
 
-    <Footer />
   </Layout>
 </template>
 
@@ -42,11 +40,10 @@ import IntroArea from "../components/IntroArea"
 import BaseSection from "../components/BaseSection"
 import InfoBox from "../components/InfoBox"
 import TextArea from "../components/TextArea"
-import Footer from "../components/Footer"
 import ParallaxImage from "../components/ParallaxImage"
 import LogoShowCase from "../components/LogoShowCase"
 import Menu from "../components/Menu"
-import SectionHeadline from "../components/SectionHeadline"
+import SmallSection from "../components/SmallSection"
 
 export default {
   components: {
@@ -54,11 +51,10 @@ export default {
     IntroArea,
     InfoBox,
     TextArea,
-    Footer,
     ParallaxImage,
     LogoShowCase,
     Menu,
-    SectionHeadline
+    SmallSection
   },
   data() {
     return home

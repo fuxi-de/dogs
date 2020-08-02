@@ -5,7 +5,7 @@
   >
     <div class="layer">
       <span class="mx-auto">
-        <p>{{ introText }}</p>
+        <p class="text-5xl leading-snug">{{ introText }}</p>
         <g-image
           v-if="isHome === true"
           src="~/assets/images/barf.png"
@@ -34,7 +34,7 @@ export default {
     right: 0;
     background: rgba(0, 0, 0, 0.5);
     span {
-      font-size: 3rem;
+      font-family: 'Work Sans', sans-serif;
       width: 50%;
       display: block;
       padding-top: 13rem;
