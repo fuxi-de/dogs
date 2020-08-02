@@ -12,7 +12,7 @@
             <g-image
               class="mx-auto"
               :src="image"
-              width="800"
+              width="700"
             />
           </slide>
         </carousel>

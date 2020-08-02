@@ -9,10 +9,19 @@
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
     </header> -->
-    <slot/>
+    <slot />
+    <Footer />
   </div>
 </template>
+<script>
+import Footer from "../components/Footer"
 
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
 <static-query>
 query {
   metadata {
@@ -22,4 +31,6 @@ query {
 </static-query>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 </style>

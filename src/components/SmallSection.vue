@@ -1,5 +1,5 @@
 <template>
-  <div class="section w-full h-40">
+  <div class="section w-full pb-40 pt-20 bg-light">
     <slot />
   </div>
 </template>

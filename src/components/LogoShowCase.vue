@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center bg-light h-full">
-    <div class="w-2/3 mx-auto flex-row justify-center">
+  <div class="flex items-center h-full">
+    <div class="flex-1 w-2/3 mx-auto flex-row justify-center items-center">
       <div>
         <g-image src="~/assets/images/dck.png" />
       </div>
