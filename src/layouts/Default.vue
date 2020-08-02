@@ -10,15 +10,18 @@
       </nav>
     </header> -->
     <slot />
+    <Menu />
     <Footer />
   </div>
 </template>
 <script>
 import Footer from "../components/Footer"
+import Menu from "../components/Menu"
 
 export default {
   components: {
-    Footer
+    Footer,
+    Menu
   }
 }
 </script>

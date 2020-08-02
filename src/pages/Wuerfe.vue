@@ -3,7 +3,6 @@
     <base-section>
       <intro-area :image="data.image" :intro-text="data.introtext"></intro-area>
     </base-section>
-    <Menu />
     <base-section>
       <image-slider :images="images" @propagateCurrentSlide="handleSlideChange" />
     </base-section>
@@ -14,7 +13,6 @@
 </template>
 
 <script>
-import Menu from "../components/Menu"
 import BaseSection from "../components/BaseSection"
 import SmallSection from "../components/SmallSection"
 import IntroArea from "../components/IntroArea"
@@ -31,8 +29,7 @@ export default {
     SmallSection,
     IntroArea,
     TextArea,
-    ImageSlider,
-    Menu
+    ImageSlider
   },
   data() {
     return {
