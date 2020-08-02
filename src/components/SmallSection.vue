@@ -1,12 +1,18 @@
 <template>
-  <div class="section w-full pb-40 pt-20 bg-light">
+  <div class="section w-full pb-40 bg-light" :class="pt ? 'pt-40' : ''">
     <slot />
   </div>
 </template>
 
 <script>
 export default {
-  name: "SmallSection"
+  name: "SmallSection",
+  props: {
+    pt: {
+      type: Boolean,
+      default: true
+    }
+  }
 }
 </script>
 

@@ -33,6 +33,7 @@ export default {
   background:  #011627 !important;
   a{
     color: #f4d8cd;
+    font-family: 'Work Sans', sans-serif;
   }
   .bm-cross{
     background:  #f4d8cd !important;
