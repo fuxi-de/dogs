@@ -6,6 +6,7 @@
     </a>
     <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-white sm:py-2 sm:mt-0 mt-4">© 2020 Susanne Rütten
     </p>
+    <g-link class="ml-8"  to="/impressum">Impressum</g-link>
   </div>
 </footer>
 </template>
