@@ -34,6 +34,9 @@ query {
 </static-query>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/Work_Sans/static/WorkSans-Regular.ttf");
+  font-weight: normal;
+}
 </style>
