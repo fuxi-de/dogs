@@ -6,9 +6,9 @@
     <small-section>
       <text-area :content="paragraphs[0]" />
     </small-section>
-    <base-section>
+    <small-section :pt="false">
       <image-slider :images="images"/>
-    </base-section>
+    </small-section>
   </Layout>
 </template>
 

@@ -19,9 +19,9 @@
       <parallax-image :image="'tine'"></parallax-image>
     </base-section>
 
-    <base-section>
+    <small-section>
       <text-area headline="Ein Kooikerhondje!" :content="paragraphs[1]" />
-    </base-section>
+    </small-section>
 
     <small-section :pt="false">
       <logo-show-case></logo-show-case>

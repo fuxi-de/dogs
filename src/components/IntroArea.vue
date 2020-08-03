@@ -5,11 +5,12 @@
   >
     <div class="layer">
       <span class="mx-auto">
-        <p class="text-5xl leading-snug">{{ introText }}</p>
+        <p class="text-3xl md:text-5xl leading-snug">{{ introText }}</p>
         <g-image
           v-if="isHome === true"
           src="~/assets/images/barf.png"
           width="150"
+          class="hidden md:block"
         />
       </span>
     </div>
