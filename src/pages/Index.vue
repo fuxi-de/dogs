@@ -11,7 +11,7 @@
       <info-box :content="infobox"></info-box>
     </base-section>
     
-    <small-section :pt="false">
+    <small-section>
       <text-area headline="Unsere Zuchtstätte" :content="paragraphs[0]" />
     </small-section>
 
