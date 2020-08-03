@@ -1,8 +1,8 @@
 <template>
   <div class="h-full bg-light flex items-center">
-    <div class="mx-auto w-2/3">
+    <div class="mx-auto md:w-2/3 w-4/5">
       <h2 v-if="headline" class="block text-3xl text-center mb-16 font-semibold">{{ headline }}</h2>
-      <p class="block mb-8 text-xl leading-loose font-light">
+      <p class="block mb-8 text-xl leading-loose font-light text-justify md:text-left">
         {{ content }}
       </p>
     </div>

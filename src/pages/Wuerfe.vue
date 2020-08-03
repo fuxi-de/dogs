@@ -3,10 +3,10 @@
     <base-section>
       <intro-area :image="data.image" :intro-text="data.introtext"></intro-area>
     </base-section>
-    <base-section>
-      <image-slider :images="images" @propagateCurrentSlide="handleSlideChange" />
-    </base-section>
     <small-section>
+      <image-slider :images="images" @propagateCurrentSlide="handleSlideChange" />
+    </small-section>
+    <small-section :pt="false">
       <text-area :content="currentThrow" />
     </small-section>
   </Layout>
