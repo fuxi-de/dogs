@@ -1,6 +1,6 @@
 <template>
   <div
-    class="parallax bg-fixed bg-center bg-top bg-no-repeat bg-cover h-full"
+    class="parallax bg-scroll md:bg-fixed bg-center bg-top bg-no-repeat bg-cover h-full"
     :style="{ backgroundImage: `url(${backgroundImage})` }"
   ></div>
 </template>
@@ -14,7 +14,7 @@ export default {
   props: ['image'],
   data() {
     return {
-      images: [tine, tineRunning],
+      images: [tine, tineRunning]
     }
   },
   computed: {
@@ -22,8 +22,8 @@ export default {
       if (this.image === 'tine') {
         return tine
       } return tineRunning
-    },
-  },
+    }
+  }
 }
 </script>
 

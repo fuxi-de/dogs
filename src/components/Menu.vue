@@ -28,7 +28,7 @@ export default {
 }
 .bm-burger-bars{
   background-color:#f4d8cd !important;
-  outline:.5px solid #011627;
+  outline:1px solid #011627;
 }
 .bm-menu{
   background:  #011627 !important;

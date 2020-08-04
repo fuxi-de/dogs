@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ backgroundImage: `url(${image})` }"
-    class="intro bg-fixed bg-center bg-top bg-no-repeat bg-cover h-full"
+    class="intro bg-scroll md:bg-fixed bg-center bg-top bg-no-repeat bg-cover h-full"
   >
     <div class="layer">
       <span class="mx-auto">
@@ -27,6 +27,7 @@ export default {
 <style lang="scss">
 .intro {
   //background-image: url("../assets/images/wiesbachaue.jpg");
+  position:relative;
   .layer {
     position: absolute;
     top: 0;
