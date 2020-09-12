@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center h-full bg-light pt-40">
+  <div class="flex items-center h-full bg-light">
     <div class="infobox mx-auto w-4/5 md:w-1/2 border-solid border-2">
       <p class="block p-8 text-xl leading-loose font-light">
         {{ content }}
