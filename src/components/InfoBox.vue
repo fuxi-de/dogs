@@ -4,11 +4,11 @@
       <p class="block p-8 text-xl leading-loose font-light">
         {{ content }}
       </p>
-      <g-image
+      <!-- <g-image
         alt="a kooikerhondje"
         src="~/assets/images/nika.jpg"
         fit="cover"
-      />
+      /> -->
     </div>
   </div>
 </template>
