@@ -1,22 +1,26 @@
 <template>
   <div class="flex items-center h-full bg-light">
-    <div class="infobox mx-auto w-4/5 md:w-1/2 border-solid border-2">
-      <p class="block p-8 text-xl leading-loose font-light">
-        {{ content }}
+    <div class="infobox mx-auto w-4/5 border-solid border-2">
+      <p class="block p-8 text-lg leading-loose font-light">
+        {{ content.content[0] }}
       </p>
-      <!-- <g-image
-        alt="a kooikerhondje"
-        src="~/assets/images/nika.jpg"
-        fit="cover"
-      /> -->
+      <list :list-items="content.list" />
+      <p class="block p-8 text-lg leading-loose font-light">
+        {{ content.content[1] }}
+      </p>
     </div>
   </div>
 </template>
 
 <script>
+import List from "./List"
+
 export default {
-  name: 'Infobox',
-  props: ['content']
+  name: "Infobox",
+  components: {
+    List
+  },
+  props: ["content"]
 }
 </script>
 
@@ -24,7 +28,7 @@ export default {
 .infobox {
   border-color: #011627;
 }
-img{
-  width:100%;
+img {
+  width: 100%;
 }
 </style>

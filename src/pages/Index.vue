@@ -7,10 +7,13 @@
         :intro-text="introtext"
       ></intro-area>
     </base-section>
-    <base-section>
-      <info-box :content="infobox"></info-box>
-    </base-section>
-    
+
+    <small-section>
+      <text-area :headline="infobox.headline" :content="infobox.content[0]" />
+      <list class="w-full md:w-2/3 mx-auto" :list-items="infobox.list" />
+      <text-area :content="infobox.content[1]" />
+    </small-section>
+
     <small-section>
       <text-area headline="Unsere Zuchtstätte" :content="paragraphs[0]" />
     </small-section>
@@ -48,7 +51,6 @@
       <text-area :content="paragraphs[4]" />
       <text-area :content="paragraphs[5]" />
     </small-section>
-
   </Layout>
 </template>
 
