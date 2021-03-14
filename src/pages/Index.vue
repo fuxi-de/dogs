@@ -9,6 +9,14 @@
     </base-section>
 
     <small-section>
+      <text-area
+        headline="Bewerbungsstatus für den nächsten Wurf:"
+        :content="status"
+        :centered="true"
+      />
+    </small-section>
+
+    <small-section>
       <text-area :headline="infobox.headline" :content="infobox.content[0]" />
       <list class="w-full md:w-2/3 mx-auto" :list-items="infobox.list" />
       <text-area :content="infobox.content[1]" />
