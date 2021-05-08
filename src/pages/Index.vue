@@ -10,6 +10,14 @@
 
     <small-section>
       <text-area
+        headline="Wir freuen uns bekanntgeben zu können:"
+        :content="news"
+        :centered="true"
+      />
+    </small-section>
+
+    <small-section>
+      <text-area
         headline="Bewerbungsstatus für den nächsten Wurf:"
         :content="status"
         :centered="true"
