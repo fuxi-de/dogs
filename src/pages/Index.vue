@@ -10,7 +10,7 @@
 
     <small-section>
       <text-area
-        headline="Wir freuen uns bekanntgeben zu können:"
+        headline="Wir freuen uns bekannt geben zu können:"
         :content="news"
         :centered="true"
       />
