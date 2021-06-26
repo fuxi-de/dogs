@@ -14,6 +14,7 @@
         :content="news"
         :centered="true"
       />
+      <g-image class="news__image" src="~/assets/images/dwurf.jpg" />
     </small-section>
 
     <small-section>
@@ -107,5 +108,11 @@ export default {
 }
 .bg-light {
   background-color: #f4d8cd;
+}
+.news__image{
+  width: 50% !important;
+  margin:auto;
+  border-radius: 2%;
+  border:2px solid white;
 }
 </style>

@@ -21,10 +21,6 @@ export default {
     listItems: {
       type: Array,
       default: () => []
-    },
-    style: {
-      type: String,
-      default: "text-center"
     }
   }
 }
